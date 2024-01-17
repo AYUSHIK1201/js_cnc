@@ -5,14 +5,14 @@ const balance = new Number(100)
 // console.log(balance);
 
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+// console.log(balance.toFixed(1));//start after decimal
 
 const otherNumber = 123.8966
 
-// console.log(otherNumber.toPrecision(4));
+// console.log(otherNumber.toPrecision(4));  //start frm the 1st digit
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN'));//put commas in number
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
