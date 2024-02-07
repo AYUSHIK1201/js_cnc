@@ -60,3 +60,28 @@ users[1].email
 
 //console.log(tinderUser.hasOwnProperty('isLoggedIn'));//property avaiable or not
 
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course //can give a vriable name t destructure obj
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// json obj
+//{
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
