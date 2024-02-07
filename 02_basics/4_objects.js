@@ -75,7 +75,7 @@ console.log(instructor);
 
 // json obj
 //{
-//     "name": "hitesh",
+//     "name": "ayushi",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
