@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //creating html content in dom-- using functions in js 
+
+    function addLanguage(langName)
+    {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+//-----------------------------------------------------------------------------------------------------------------
+
+
+//creating html content in dom-- using more optimal way for functions in js 
+//by using textnode rather than innerhtml because innerhtml traverse all elements 
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+
+        /*const addText = document.createTextNode(langName)
+        li.appendChild(addText)
+        */
+        //orrrrrrrrrrrrrr
+         li.appendChild(document.createTextNode(langName))
+
+         document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+
+    //-----------------------------------------------------------------------------------------------------------
+
+    //Edit or replcing value of ny nth child of list
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo" // textcontent is similar as innerhtml
+    secondLang.replaceWith(newli)
+
+    //to change or edit complete other html 
+    const firstLang = document.querySelector("li:first-child") 
+    firstLang.outerHTML = '<li>TypeScript</li>'////op update -- till now 1st child was "mojo" but now it is "typescript"
+
+
+    //-----------------------------------------------------------------------------------------------------------
+
+     //remove
+
+     const lastLang = document.querySelector('li:last-child')
+    lastLang.remove() //op update--- remove last child thaat is "golang"
+
+    </script>
+</html>
