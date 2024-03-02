@@ -1,6 +1,6 @@
 # Project related to DOM
 
-## Project link
+## Project link -for html and css content
 [CLICK HERE](https://stackblitz.com/edit/dom-project-chaiaurcode?file=1-colorChanger%2Fchaiaurcode.js,1-colorChanger%2Findex.html)
 
 # Solution code
@@ -39,7 +39,7 @@ buttons.forEach(function (button) {//button is class in html page
 
 ```
 
-##Project 2-BMI calcultor
+## Project 2-BMI calcultor
 
 ``` javascript
 
@@ -75,7 +75,7 @@ form.addEventListener('submit', function (e) {
 
 ```
 
-Project 3- Digital clock
+## Project 3- Digital clock
 
 ``` javascript
 
@@ -90,7 +90,7 @@ setInterval(function () {
 
 ```
 
-project 4- guess the number
+## project 4- guess the number
 
 
 ``` javascript
@@ -207,7 +207,46 @@ function newGame() {
   });
 }
 ```
+## project 6- unlimited colour
 
+``` javascript
+//generate a random color
+
+const randomColor = function ()
+ {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  //to add random valye in colour
+  for (let i = 0; i < 6; i++) 
+  {
+    color += hex[Math.floor(Math.random() * 16)];//to create random value
+  } 
+  return color;
+};
+
+let intervalId;
+
+const startChangingColor = function () {
+  if (!intervalId) //when intervell id is null
+  {
+    intervalId = setInterval(changeBgColor, 1000);
+  }
+
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+const stopChangingColor = function () {
+  clearInterval(intervalId);
+  intervalId = null;//to save space 
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+```
+## project 5- keyboard
 
 ``` javascript
 
