@@ -112,6 +112,7 @@ consumePromiseFive()
 // }
 
 //getAllUsers()
+//fetch is executed before set timeout queue
 
 fetch('https://api.github.com/users/hiteshchoudhary') //returns promise ie return resolve for reject
 .then((response) => {
