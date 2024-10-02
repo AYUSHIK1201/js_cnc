@@ -1,3 +1,6 @@
+//singleton obj created by constructor but not by litrals  
+//eg==>// Object.create -->this is singleton obj by constructor
+
 // const tinderUser = new Object() //singletn obj
 const tinderUser = {}//non singleton obj
 
@@ -5,9 +8,10 @@ tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-//console.log(tinderUser);
+//console.log(tinderUser);//op=>{ id: '123abc', name: 'Sammy', isLoggedIn: false }
 
-//--------------------------------------------------
+//------------------------------------------------------------------------------------------
+//nested obj
 
 const regularUser = {
     email: "some@gmail.com",
@@ -19,7 +23,7 @@ const regularUser = {
     }
 }
 
-//console.log(regularUser.fullname.userfullname.firstname);
+//console.log(regularUser.fullname.userfullname.firstname); //op=>hitesh
 
 //-------------------------------------------------------------------------------
 
@@ -31,7 +35,7 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = { obj1, obj2 }//obj2 values goes in obj1
  // const obj3 = Object.assign({}, obj1, obj2, obj4) //merge array--obj1,obj2,obj4 values goes in {}
 
-const obj3 = {...obj1, ...obj2}//combine obj
+const obj3 = {...obj1, ...obj2}//combine obj ,same as arrays
 //console.log(obj3);//op=>{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
 //--------------------------------------------------------------------------
@@ -52,13 +56,15 @@ const users = [
 ]
 
 users[1].email
-// console.log(tinderUser);
+ //console.log(tinderUser);//op=>{ id: '123abc', name: 'Sammy', isLoggedIn: false }
 
 //console.log(Object.keys(tinderUser));      //op=>[ 'id', 'name', 'isLoggedIn' ]
  //console.log(Object.values(tinderUser));   //op=>[ '123abc', 'Sammy', false ]
 //console.log(Object.entries(tinderUser));    //op=>[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
-//console.log(tinderUser.hasOwnProperty('isLoggedIn'));//property avaiable or not
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'));//check property avaiable or not
+
+//------------------------------------------------------------------------------------------
 
 const course = {
     coursename: "js in hindi",
@@ -68,10 +74,15 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course //can give a vriable name t destructure obj
+const {courseInstructor} = course // //can give a vriable name t destructure obj
+ console.log(courseInstructor);//op=>hitesh
 
-// console.log(courseInstructor);
-console.log(instructor);
+ //OR
+
+ /*
+ const {courseInstructor: instructor} = course //name of "courseInstructor" becomes "instructor" for obj "course"
+console.log(instructor);//op=>hitesh
+*/
 
 // json obj
 //{
