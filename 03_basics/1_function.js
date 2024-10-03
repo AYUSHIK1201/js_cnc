@@ -30,8 +30,6 @@ const result = addTwoNumbers(3, 5)
 
 */
 
-
-
 /*function addTwoNumbers2(number1, number2){
 
     // let result = number1 + number2 // result have only scope in function
@@ -48,7 +46,6 @@ console.log("Result: ", result); //op=>Result:  8
 
 //----------------------------------------------------------------------
 
-
 /*function loginUserMessage(username = "sam"){
     if(!username)//means user name is not true ie argument is undefined 
     {
@@ -61,10 +58,7 @@ console.log(loginUserMessage("ayushi"))
 //if argument not passed then return undefined 
 
 */
-
-
 //------------------------------------------------------------------------------
-
 
 /*function calculateCartPrice(val1, val2, ...num1) //...  is rest or sprad operting
 {
@@ -92,8 +86,6 @@ handleObject({
     price: 399
 })
 */
-
-
 //-------------------------------------------------------
 
 /*const myNewArray = [200, 400, 100, 600]
@@ -101,10 +93,8 @@ handleObject({
 function returnSecondValue(getArray){
     return getArray[1]
 }
-
 // console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000])); //op=>400
-
 */
 
 
