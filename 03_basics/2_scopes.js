@@ -76,7 +76,7 @@ function addone(num){
 
 
 
-/*addTwo(5)//op=> Cannot access 'addTwo' before initialization--cant inditazie before declare
+/*addTwo(5)//op=> Cannot access 'addTwo' before initialization--cant inditazie before declare because we created a variable to 
 const addTwo = function(num){
     return num + 2
 }
