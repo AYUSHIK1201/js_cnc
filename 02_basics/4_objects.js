@@ -26,8 +26,6 @@ const regularUser = {
 //console.log(regularUser.fullname.userfullname.firstname); //op=>hitesh
 
 //-------------------------------------------------------------------------------
-
-
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
@@ -54,7 +52,6 @@ const users = [
         email: "h@gmail.com"
     },
 ]
-
 users[1].email
  //console.log(tinderUser);//op=>{ id: '123abc', name: 'Sammy', isLoggedIn: false }
 
@@ -63,17 +60,13 @@ users[1].email
 //console.log(Object.entries(tinderUser));    //op=>[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
 //console.log(tinderUser.hasOwnProperty('isLoggedIn'));//check property avaiable or not
-
 //------------------------------------------------------------------------------------------
-
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
 }
-
 // course.courseInstructor
-
 const {courseInstructor} = course // //can give a vriable name t destructure obj
  console.log(courseInstructor);//op=>hitesh
 

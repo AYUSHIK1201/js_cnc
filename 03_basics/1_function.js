@@ -50,13 +50,15 @@ console.log("Result: ", result); //op=>Result:  8
 
 
 /*function loginUserMessage(username = "sam"){
-    if(!username){
+    if(!username)//means user name is not true ie argument is undefined 
+    {
         console.log("PLease enter a username");
         return
     }
     return `${username} just logged in`
 }
 console.log(loginUserMessage("ayushi"))
+//if argument not passed then return undefined 
 
 */
 
