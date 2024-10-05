@@ -13,7 +13,7 @@
 // user.username = "sam"
 //user.welcomeMessage()//op=>sam , welcome to website
 
-//console.log(this);//op=>{}
+//console.log(this);//op=>{} //here this is for global obj
 
 */
 
@@ -23,27 +23,32 @@
  }
 
  chai()*/
-//--------------------------------------------------------------------------------------------------------------------
- /*const chai = function () 
+//----------------------------------------------------------------------------------------------------------------
+/*const chai = function () 
  {
     let username = "hitesh"
      console.log(this.username);
 
     }
-    */
 
-    /*const chai =  () => {
+    chai()
+ */ 
+
+
+/*const chai =  () => {
         let username = "hitesh"
         console.log(this);//op=>{}
     }
     chai()
-    */
+*/    
 
-    const addTwo = (num1, num2) => 
+
+ /* const addTwo = (num1, num2) => 
     {
              return num1 + num2
          }
-//can write in same line witht rturn keyword s it contain only 1 line statement calld implecit 
+             
+//can write in same line with rturn keyword s it contain only 1 line statement calld implecit 
          //const addTwo = (num1, num2) =>  num1 + num2 
             //or
         //const addTwo = (num1, num2) => ( num1 + num2 )

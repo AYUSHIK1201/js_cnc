@@ -22,7 +22,7 @@ for (const greet of greetings) {
 
 //--------------------------------------------------------------------------------------------------------------
 
-//for-in for map
+//for-of for map
 
 const map = new Map()
 map.set('IN', "India")
@@ -55,3 +55,4 @@ const myObject = {
 //     console.log(key, ':-', value);
     
 // }
+// for of does not work with obj for that use for in loops 
