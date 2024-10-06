@@ -6,13 +6,13 @@ Array_name.forEach( function_name (val){
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-/*
-coding.forEach( function (val){
+
+coding.forEach( function (val) //val take value of each element one by one
+{
     console.log(val);//p=>js ruby java .......
 } )
-*/
 
-
+///////////////////////////////////////////////////////////////////////////////////////
 /*
 //arrow function
 coding.forEach( (item) => {
@@ -20,9 +20,8 @@ coding.forEach( (item) => {
  } )
  */
 
+///////////////////////////////////////////////////////////////////////////////////////////
 /*
-
-
 //by calling refernce of function
 function printMe(item){
   console.log(item);
@@ -37,7 +36,8 @@ console.log(item, index, arr);
 } )
 */
 
-/*
+/////////////////////////////////////////////////////////////////////////////////
+//array of obj
 
 const myCoding = [
     {
@@ -57,4 +57,4 @@ const myCoding = [
 myCoding.forEach( (item) => {
     
     console.log(item.languageName);
-} )*/
+} )
