@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// for each cant be stored in a variable
+// for each cant be stored in a variable and can not return a value
 /*const values = coding.forEach( (item) => 
 {
 console.log(item);
@@ -34,9 +34,8 @@ const newNums = myNums.filter( (num) => {
 } )
 console.log(newNums);
 */
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 //filter in obj
-
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
@@ -50,9 +49,7 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  
-  let userBooks = books.filter( (bk) => bk.genre === 'History')
-
+let userBooks = books.filter( (bk) => bk.genre === 'History')
 
  userBooks2 = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
@@ -75,7 +72,6 @@ const books = [
   }
 ]
 */
-
   console.log(userBooks2);
   /*op=>
   [

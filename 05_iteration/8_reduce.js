@@ -1,14 +1,14 @@
 //reducer runs like a loop 
-/*const myNums = [1, 2, 3]
+const myNums = [1, 2, 3]
 
 const myTotal = myNums.reduce(function (accumulator, currval) 
 {
   console.log(`acc: ${accumulator} and currval: ${currval}`);
   
   return accumulator + currval // after this accumulator new value become accumulator + currval
-}, 0) //0 is  initial value of accumulator and currval  is current value
-*/
+}, 0) 
 
+//0 is  initial value of accumulator and currval  is current value
 /*op=> /*op=>acc: 0 and currval: 1
 acc: 1 and currval: 2
 acc: 3 and currval: 3*/
@@ -23,7 +23,7 @@ console.log(myTotal);
 */
 
 /*--------------------------------------------------------------------------------------------------------------
-//in objects
+//in array of objects
 
 const shoppingCart = [
     {
@@ -45,6 +45,5 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
-
 console.log(priceToPay);
 */
