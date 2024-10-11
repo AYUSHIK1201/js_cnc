@@ -1,4 +1,5 @@
 /*
+///creation of promises 
 const promiseOne = new Promise(function(resolve, reject)
 {
     //Do an async task
@@ -9,7 +10,7 @@ const promiseOne = new Promise(function(resolve, reject)
     }, 1000)
 })
 
-//to give the result when resolve() is called
+//consumtion of promises --to give the result when resolve() is called
 promiseOne.then(function(){
     console.log("Promise consumed");
 })
@@ -63,7 +64,7 @@ const promiseFour = new Promise(function(resolve, reject){
  .then((user) => {
     console.log(user);
     return user.username
-}).then((username) => {
+}).then((username) => { //this username is the value returned by above .then
     console.log(username);
 }).catch(function(error){
     console.log(error);
@@ -115,7 +116,7 @@ consumePromiseFive()
 //fetch is executed before set timeout queue
 
 fetch('https://api.github.com/users/hiteshchoudhary') //returns promise ie return resolve for reject
-.then((response) => {
+.then((response) => {// response is result of resolved its not necessary to be named same we can write any argemt name according to our will
     return response.json()
 })
 .then((data) => {
