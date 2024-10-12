@@ -6,7 +6,7 @@ const promiseOne = new Promise(function(resolve, reject)
     // DB calls, cryptography, network
     setTimeout(function(){
         console.log('Async task is compelete');
-        resolve() //connect resolve and .then  ,.then is used to give the result when task is completed when resolve() is called
+        resolve() //connect resolve and .then  ,.then is used to give the result when task is completed when resolve() is called so here task is completed to print console and hence now resolved() is called
     }, 1000)
 })
 
@@ -14,8 +14,8 @@ const promiseOne = new Promise(function(resolve, reject)
 promiseOne.then(function(){
     console.log("Promise consumed");
 })
-*/
 
+*/
 ////orrrrrrrrrrrrrrrrrrrrrrrrrrr
 
 /*
@@ -34,7 +34,7 @@ new Promise(function(resolve, reject){
 
 /*const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve({username: "Chai", email: "chai@example.com"})
+        resolve({username: "Chai", email: "chai@example.com"})//to print a value when reolved is called
     }, 1000)
 })
 
@@ -44,9 +44,8 @@ promiseThree.then(function(user) //user is any name for argumet
 })
 */
 
-
-//-----------------------------------------------------------------------------------------------------------------------------
-const promiseFour = new Promise(function(resolve, reject){
+//----------------------------------------------------------------------------------------------------------------
+/*const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
         if (!error) 
@@ -69,11 +68,9 @@ const promiseFour = new Promise(function(resolve, reject){
 }).catch(function(error){
     console.log(error);
 }).finally(() => console.log("The promise is either resolved or rejected"))
- 
-
-
+*/
 //-----------------------------------------------------------------------------------------------------------------------------
-
+/*
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
@@ -88,7 +85,7 @@ const promiseFive = new Promise(function(resolve, reject){
 
 async function consumePromiseFive(){
     try {
-        const response = await promiseFive
+        const response = await promiseFive // if error occures directly goes to catch
         console.log(response);
     } catch (error) {
         console.log(error);
@@ -96,10 +93,7 @@ async function consumePromiseFive(){
 }
 
 consumePromiseFive()
-
-
-
-
+*/
 //-----------------------------------------------------------------------------------------------------------------------------
 // async function getAllUsers(){
 //     try {
@@ -116,10 +110,10 @@ consumePromiseFive()
 //fetch is executed before set timeout queue
 
 fetch('https://api.github.com/users/hiteshchoudhary') //returns promise ie return resolve for reject
-.then((response) => {// response is result of resolved its not necessary to be named same we can write any argemt name according to our will
+.then((response) => {// response is passed value of resolved() its not necessary to be named same we can write any parameter name according to our will
     return response.json()
 })
-.then((data) => {
+.then((data) => { //data is return value of above .then
     console.log(data);
 })
 .catch((error) => console.log(error))
